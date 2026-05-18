@@ -854,6 +854,7 @@ button {
   grid-template-columns: 600px 1fr;
   border-radius: 40px;
   overflow: hidden;
+  z-index: 10;
 
   /* ФОН НА ВСЮ КАРТОЧКУ */
   background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
@@ -928,50 +929,69 @@ button {
   border-radius: 30px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   transition: opacity var(--tr);
-
 }
 /* ============================================================
      FOR WHOM
      ============================================================ */
+/* FOR WHOM */
 .for-whom {
   position: relative;
-  min-height: 420px;
-  overflow: hidden;
+  margin-top: -53px;
+  /* padding-top: 180px; */
+  min-height: 510px;
+  overflow: visible;
   display: flex;
   align-items: flex-end;
 }
 .for-whom__bg {
   position: absolute;
   inset: 0;
+  background-image: url("img/for-whom-bckg.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #e8f3fa;
+  z-index: 1;
+  height: 620px;
 }
 .for-whom__container {
   position: relative;
   z-index: 2;
+  padding-inline: 30px;
   width: 100%;
-  padding-top: 60px;
 }
+
 .for-whom__title {
-  font-size: clamp(22px, 3vw, 36px);
+  font-size: clamp(22px, 3vw, 35px);
   font-weight: 800;
   color: var(--text);
-  line-height: 1.25;
-  max-width: 560px;
-  margin-bottom: 40px;
+  max-width: 634px;
+ margin-bottom: 175px;
+ margin-left: 4px;
+}
+
+.for-whom__logo {
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+  left: 2px;
+  pointer-events: none;
 }
 
 .age-slider {
   position: relative;
   display: flex;
   align-items: flex-end;
+  top: 80px;
+
 }
 .age-slider__arrow {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+ /* bottom: 116%;
+  transform: translateY(155%); */
   z-index: 10;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   background: var(--bg-white);
   border-radius: 50%;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
@@ -986,19 +1006,24 @@ button {
   color: #fff;
 }
 .age-slider__arrow--prev {
-  left: -46px;
+  left: 38px;
+  bottom: 134px;
+
 }
 .age-slider__arrow--next {
-  left: -4px;
+  bottom: 134px;
 }
 .age-slider__track {
   display: flex;
   overflow: hidden;
+  gap: 20px;
+
 }
 
 .age-card {
-  width: 280px;
-  padding: 20px 24px;
+  width: 456px;
+  border-radius: 15px;
+  padding: 13px 15px;
   background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(4px);
   flex-shrink: 0;
@@ -1007,30 +1032,31 @@ button {
   background: rgba(255, 255, 255, 0.92);
 }
 .age-card__age {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 800;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 6px;
+  margin-bottom: 36px;
 }
 .age-card--active .age-card__age {
-  color: var(--text);
+color: #3496CE;
 }
 .age-card__desc {
-  font-size: 13px;
+  font-size: 14px;
+  margin-bottom: 4px;
   color: rgba(255, 255, 255, 0.7);
 }
 .age-card__desc--accent {
   color: var(--blue);
 }
 .age-card--active .age-card__desc {
-  color: var(--text-muted);
+   color: #3496CE;
 }
 
 /* ============================================================
      COMPARE
      ============================================================ */
 .compare {
-  padding: 80px 0;
+  padding: 205px 0;
   background: var(--bg-white);
 }
 .compare__body {
