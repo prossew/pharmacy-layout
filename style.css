@@ -613,7 +613,6 @@ button {
   padding-top: 33px;
   padding-bottom: 0;
   background: var(--bg-white);
-  
 }
 
 .features__container {
@@ -661,14 +660,16 @@ button {
   pointer-events: none;
 }
 
-.features__line-right { 
-    position: absolute;
-    top: 202px;
-    z-index: 1;
-    right: 30px;
-    pointer-events: none;
-  }
-  
+.features__line-right {
+  position: absolute;
+  top: 171px;
+  z-index: 1;
+  right: 42px;
+  transform:scale(1.1);
+  transform-origin: center;
+  transform-box: fill-box;
+  pointer-events: none;
+}
 
 /* Зигзаг блоков */
 .frow {
@@ -683,8 +684,6 @@ button {
 .frow--left {
   justify-content: flex-start;
 }
-
-
 
 /* Карточка */
 .fcard {
@@ -713,7 +712,7 @@ button {
   left: 179px;
   width: 88px;
   height: 88px;
-  border: 2px solid #3496ce; 
+  border: 2px solid #3496ce;
   border-radius: 50%;
   background: #fff;
   display: flex;
@@ -763,47 +762,47 @@ button {
   color: rgba(255, 255, 255, 0.88);
 }
 
-
-/* .fcard_row2-text {
-margin-left: 6px;
-margin-top: 20px;
-max-width: 389px;
-max-height: 70px;
-} */
-
 /* ============================================================
        SLOGAN (2 банки + текст)
        ============================================================ */
+
 .slogan {
-  padding-top: 280px;
+  padding-top: 168px;
   padding-bottom: 72px;
-  background: var(--bg-white);
   text-align: center;
 }
+
 .slogan__jars {
   display: flex;
-  justify-content: center;
-  gap: 130px; /* gap между банками 130px */
-  margin-bottom: 80px;
+  justify-content: center; 
+}
+
+.slogan__jars-first {
+ margin-right: -52px;
+}
+
+.slogan__jars-second {
+margin-right: 29px;
 }
 .slogan__title {
   font-size: clamp(28px, 4vw, 48px);
   font-weight: 900;
   color: var(--blue);
-  margin-bottom: 20px;
-  line-height: 1.1;
+margin-top: 15px;
+  line-height: 1;
   letter-spacing: -1px;
 }
 .slogan__sub {
-  font-size: 16px;
+  font-size: 19px;
+  margin-top: 16px;
   color: var(--text-muted);
-  line-height: 1.65;
-  margin-bottom: 28px;
+  line-height: 1;
 }
 .slogan__actions {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
   gap: 0;
 }
 .slogan__btn {
@@ -811,12 +810,12 @@ max-height: 70px;
   align-items: center;
   justify-content: center;
   height: 43px;
-  padding: 0 24px;
+  padding: 0 20px;
   background: #3193cc;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
-  border-radius: 30px 0 0 30px;
+  border-radius: 30px;
   transition: opacity var(--tr);
   white-space: nowrap;
 }
@@ -830,41 +829,12 @@ max-height: 70px;
   width: 43px;
   height: 43px;
   background: #3193cc;
-  border-radius: 0 30px 30px 0;
+  border-radius: 30px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   transition: opacity var(--tr);
 }
 .slogan__btn-icon:hover {
   opacity: 0.85;
-}
-
-/* ============================================================
-     SLOGAN
-     ============================================================ */
-.slogan {
-  padding: 80px 0 72px;
-  background: var(--bg-light);
-  text-align: center;
-}
-.slogan__jars {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 36px;
-}
-.slogan__title {
-  font-size: clamp(24px, 4vw, 44px);
-  font-weight: 900;
-  color: var(--blue);
-  margin-bottom: 16px;
-  line-height: 1.15;
-  letter-spacing: -1px;
-}
-.slogan__sub {
-  font-size: 15px;
-  color: var(--text-muted);
-  line-height: 1.65;
-  margin-bottom: 28px;
 }
 
 /* ============================================================
