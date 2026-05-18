@@ -665,7 +665,7 @@ button {
   top: 171px;
   z-index: 1;
   right: 42px;
-  transform:scale(1.1);
+  transform: scale(1.1);
   transform-origin: center;
   transform-box: fill-box;
   pointer-events: none;
@@ -774,21 +774,21 @@ button {
 
 .slogan__jars {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .slogan__jars-first {
- margin-right: -52px;
+  margin-right: -52px;
 }
 
 .slogan__jars-second {
-margin-right: 29px;
+  margin-right: 29px;
 }
 .slogan__title {
   font-size: clamp(28px, 4vw, 48px);
   font-weight: 900;
   color: var(--blue);
-margin-top: 15px;
+  margin-top: 15px;
   line-height: 1;
   letter-spacing: -1px;
 }
@@ -841,96 +841,95 @@ margin-top: 15px;
      COMPOUND
      ============================================================ */
 .compound {
-  padding: 80px 0;
-  background: var(--bg-white);
-}
-.compound__card {
-  background: var(--bg-white);
-  border-radius: var(--r-lg);
-  box-shadow: var(--shadow);
-  display: grid;
-  grid-template-columns: 340px 1fr;
-  overflow: hidden;
-  border: 1px solid rgba(2, 136, 209, 0.08);
-}
-.compound__img-col {
-  background: linear-gradient(135deg, #d0e8f8 0%, #a8d1ef 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 480px;
-}
-.compound__powder {
-  position: relative;
-  width: 200px;
-  height: 200px;
-}
-.compound__powder-bg {
-  width: 180px;
-  height: 90px;
-  background: radial-gradient(
-    ellipse,
-    rgba(255, 255, 255, 0.7) 0%,
-    transparent 80%
-  );
-  border-radius: 50%;
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-}
-.compound__scoop-wrap {
-  position: absolute;
-  bottom: 40px;
-  left: 30px;
-}
-.compound__scoop-cup {
-  width: 80px;
-  height: 50px;
-  background: linear-gradient(180deg, #c8dcea, #a8c4d8);
-  border-radius: 0 0 40px 40px;
-}
-.compound__scoop-handle {
-  width: 8px;
-  height: 90px;
-  background: linear-gradient(180deg, #b0cde0, #8fb5cc);
-  border-radius: 4px;
-  position: absolute;
-  top: -70px;
-  right: -10px;
-  transform: rotate(30deg);
+  padding: 20px 26px 20px 0px;
 }
 
-.compound__text-col {
-  padding: 40px;
+.compound__container {
+  padding-left: 30px;
 }
+
+.compound__card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  border-radius: 40px;
+  overflow: hidden;
+
+  /* ФОН НА ВСЮ КАРТОЧКУ */
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(2, 136, 209, 0.08);
+}
+
 .compound__title {
-  font-size: clamp(18px, 2.2vw, 26px);
-  font-weight: 800;
-  color: var(--text);
-  margin-bottom: 28px;
-  line-height: 1.3;
+  font-size: 35px;
+  margin-left: 38px;
+  line-height: 1.2;
+}
+
+.compound__img-col {
+  position: relative;
+  margin-left: 29px;
+  height: 620px;
+  width: 545px;
+  margin-top: 30px;
+
+  /* только картинка */
+  background: url("img/spoon.png") center center / cover no-repeat;
 }
 .compound__accent {
-  color: var(--blue);
+  color: #3496ce;
+}
+.compound__text-col {
+  padding: 77px 70px 78px 0px;
+  background: transparent;
 }
 .compound__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px 28px;
-  margin-bottom: 28px;
+  gap: 26px 22px;
+  margin-top: 28px;
+  margin-left: 38px;
 }
 .compound__item h4 {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 4px;
+  font-size: 18px;
 }
 .compound__item p {
   font-size: 12px;
-  line-height: 1.65;
-  color: var(--text-muted);
 }
+.compound__button {
+  display: flex;
+}
+.compound__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 173px;
+  margin-top: 12px;
+  height: 43px;
+  padding: 0 20px;
+  background: #3193cc;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: opacity var(--tr);
+  white-space: nowrap;
+}
+.compound__btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  margin-top: 10px;
+  background: #3193cc;
+  border-radius: 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  transition: opacity var(--tr);
 
+}
 /* ============================================================
      FOR WHOM
      ============================================================ */
