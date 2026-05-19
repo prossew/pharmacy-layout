@@ -925,10 +925,12 @@ button {
   position: relative;
   margin-top: -53px;
   min-height: 510px;
-  overflow: visible;
   display: flex;
+
   align-items: flex-end;
 }
+
+
 .for-whom__bg {
   position: absolute;
   inset: 0;
@@ -945,6 +947,7 @@ button {
   z-index: 2;
   padding-inline: 30px;
   width: 100%;
+
 }
 
 .for-whom__title {
@@ -958,16 +961,16 @@ button {
 
 .for-whom__logo {
   position: absolute;
-  top: 40px;
-  z-index: 1;
-  left: 2px;
+  top: -70px;
+  left: -157px;
+  z-index: 0;
   pointer-events: none;
+  overflow-x: hidden;
+
 }
 
 .age-slider {
   position: relative;
-  display: flex;
-  align-items: flex-end;
   top: 80px;
 }
 .age-slider__arrow {
@@ -1040,7 +1043,7 @@ button {
      ============================================================ */
 .compare {
   padding: 166px 0;
-  background: var(--bg-white);
+  background: var(--bg-light);
 }
 .compare__container {
   padding-inline: 30px;
@@ -1156,7 +1159,7 @@ button {
 }
 
 .pbox {
-  background: linear-gradient(135deg, #2196f3 0%, #2F9DCF 60%);
+  background: linear-gradient(135deg, #2196f3 0%, #2f9dcf 60%);
   border-radius: var(--r-lg);
   padding: 27px 32px;
   display: flex;
@@ -1200,7 +1203,7 @@ button {
   font-weight: 600;
   color: #fff;
   bottom: 51px;
-right: 5px;
+  right: 5px;
   letter-spacing: -1px;
 }
 
@@ -1209,7 +1212,7 @@ right: 5px;
   z-index: 1;
   bottom: 36px;
   right: 5px;
-  width: 393px; 
+  width: 393px;
 }
 
 .pbox__vol {
@@ -1217,7 +1220,6 @@ right: 5px;
   bottom: 46px;
   left: -5px;
   color: rgba(255, 255, 255, 0.75);
-  
 }
 .pbox__btn {
   background: rgba(255, 255, 255, 0.2);
@@ -1308,50 +1310,127 @@ right: 5px;
   line-height: 1.6;
 }
 /* ============================================================
-     FAQ
-     ============================================================ */
+   FAQ
+   ============================================================ */
+
 .faq {
-  padding: 60px 0;
-  background: var(--bg-white);
+  padding: 80px 0;
+  background: var(--bg-light);
 }
+
 .faq__list {
-  max-width: 860px;
+  max-width: 1170px;
+  margin-top: 9px;
   margin-inline: auto;
+
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
+
 .faq__item {
-  border-bottom: 1px solid rgba(2, 136, 209, 0.1);
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease;
 }
+
+.faq__item[open] {
+  background: #eef7fd;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
 .faq__q {
+  min-height: 54px;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--text);
+  justify-content: space-between;
+
+  padding: 0 18px;
+
   cursor: pointer;
+
   list-style: none;
-  gap: 12px;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+
+  gap: 20px;
 }
+
 .faq__q::-webkit-details-marker {
   display: none;
 }
+
 .faq__ico {
-  color: var(--blue);
-  font-size: 20px;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 1px solid #0782e0;
+  background: #ffffff;
+  color: #3496ce;
+
+  font-size: 24px;
+  font-weight: 400;
+
   flex-shrink: 0;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
 }
+
+/* ПЛЮС -> МИНУС */
+
+.faq__item[open] .faq__ico {
+  background: #f5f5f5;
+}
+
+.faq__item[open] .faq__ico::before {
+  content: "−";
+}
+
+.faq__item:not([open]) .faq__ico::before {
+  content: "+";
+}
+
 .faq__a {
-  padding: 0 0 18px;
+  padding: 0 28px 18px 28px;
+  animation: faqFade 0.25s ease;
 }
+
 .faq__a p {
-  font-size: 13px;
-  line-height: 1.75;
+  max-width: 1200px;
+margin-left: 1px;
+  font-size: 13.8px;
+  line-height: 1.3;
+
   color: var(--text-muted);
 }
 
+@keyframes faqFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* ============================================================
      CONTACT
      ============================================================ */
