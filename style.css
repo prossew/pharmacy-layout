@@ -1405,7 +1405,7 @@ button {
 }
 
 .faq__a {
-  padding: 0 28px 18px 28px;
+  padding: 0 28px 18px 18px;
   animation: faqFade 0.25s ease;
 }
 
@@ -1559,49 +1559,61 @@ margin-left: 1px;
 .footer {
   background: var(--bg-white);
   border-top: 1px solid rgba(2, 136, 209, 0.1);
-  padding: 28px 0;
+  padding: 20px 0;
 }
 .footer__container {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 24px;
+  gap: 27px;
+}
+
+.footer__left {
+  margin-top: 20px;
+
 }
 .footer__copy {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-muted);
+  margin-top: 8px;
 }
 .footer__rights {
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(111, 127, 147, 0.7);
+  margin-top: 7px;
 }
 .footer__center {
   text-align: center;
 }
 .footer__logo {
-  font-size: 30px;
-  font-weight: 900;
-  color: var(--blue);
+  margin-left: 158px;
+  width: 27%;
 }
 .footer__right {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 9px;
   align-items: flex-end;
+  margin-top: 28px;
 }
+
 .footer__link {
-  font-size: 13px;
+  font-size: 13.8px;
   color: var(--blue);
+  text-decoration:underline;
 }
 .footer__link:hover {
   text-decoration: underline;
 }
 .footer__disclaimer {
-  font-size: 11px;
+  font-size: 10.7px;
   color: rgba(111, 127, 147, 0.7);
-  max-width: 280px;
-  text-align: right;
+  max-width: 450px;
+  text-align: center;
   line-height: 1.5;
+  margin-top: 12px;
+
+  
 }
 
 /* ============================================================
