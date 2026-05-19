@@ -60,7 +60,7 @@ button {
   width: 100%;
   max-width: 1920px;
   margin-inline: auto;
-  padding-inline: 40px;
+  padding-inline: 30px;
 }
 
 /* ============================================================
@@ -225,20 +225,6 @@ button {
 }
 .jar--pbox .jar__name {
   font-size: 22px;
-}
-
-.jar--ibox {
-  width: 100px;
-}
-.jar--ibox .jar__lid {
-  height: 10px;
-}
-.jar--ibox .jar__body {
-  min-height: 130px;
-  border-radius: 0 0 16px 16px;
-}
-.jar--ibox .jar__name {
-  font-size: 14px;
 }
 
 /* ============================================================
@@ -477,6 +463,7 @@ button {
   border-left: 1px solid rgba(47, 157, 207, 0.2);
   margin-left: -1px;
 }
+
 .hero__fact {
   margin-top: 145px;
 }
@@ -937,7 +924,6 @@ button {
 .for-whom {
   position: relative;
   margin-top: -53px;
-  /* padding-top: 180px; */
   min-height: 510px;
   overflow: visible;
   display: flex;
@@ -1053,7 +1039,7 @@ button {
      COMPARE
      ============================================================ */
 .compare {
-  padding: 200px 0;
+  padding: 166px 0;
   background: var(--bg-white);
 }
 .compare__container {
@@ -1070,7 +1056,8 @@ button {
   font-size: clamp(20px, 2.5vw, 35px);
   font-weight: 800;
   color: var(--text);
-  margin-bottom: 16px;
+  margin-top: 33px;
+  margin-bottom: 23px;
 }
 .compare__p {
   font-size: 13.8px;
@@ -1080,7 +1067,7 @@ button {
   margin-top: 20px;
 }
 .compare__badge-row {
-  margin-top: 163px;
+  margin-top: 160px;
   margin-bottom: 18px;
 }
 
@@ -1104,13 +1091,13 @@ button {
   width: 380px;
   left: 50%;
   transform: translateX(-50%);
-  top: 66px;
+  top: 100px;
   pointer-events: none;
   z-index: 1;
 }
 
 .compare__right {
-  margin-top: -22px;
+  margin-top: 15px;
   margin-left: 218px;
 }
 .compare__jar-float {
@@ -1159,8 +1146,8 @@ button {
      PRICE + INSTR
      ============================================================ */
 .price-instr {
-  padding: 60px 0;
   background: var(--bg-light);
+  margin-top: -35px;
 }
 .price-instr__grid {
   display: grid;
@@ -1169,35 +1156,68 @@ button {
 }
 
 .pbox {
-  background: linear-gradient(135deg, #2196f3 0%, #0288d1 100%);
+  background: linear-gradient(135deg, #2196f3 0%, #2F9DCF 60%);
   border-radius: var(--r-lg);
-  padding: 36px 32px;
+  padding: 27px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+  position: relative;
 }
+
+.pbox__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+.pbox__name,
+.pbox__jar-wrap,
+.pbox__price,
+.pbox__vol,
+.pbox__btn {
+  position: relative;
+  z-index: 1;
+}
+
 .pbox__name {
-  font-size: 15px;
+  font-size: 24.3px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.95);
-  margin-bottom: 24px;
-  line-height: 1.4;
+  top: 36px;
+  line-height: 1.2;
+  margin-right: 10px;
 }
-.pbox__jar-wrap {
-  margin-bottom: 20px;
-}
+
 .pbox__price {
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 25px;
+  font-weight: 600;
   color: #fff;
-  margin-bottom: 4px;
+  bottom: 51px;
+right: 5px;
   letter-spacing: -1px;
 }
+
+.pbox__jar {
+  position: relative;
+  z-index: 1;
+  bottom: 36px;
+  right: 5px;
+  width: 393px; 
+}
+
 .pbox__vol {
   font-size: 13px;
+  bottom: 46px;
+  left: -5px;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 20px;
+  
 }
 .pbox__btn {
   background: rgba(255, 255, 255, 0.2);
@@ -1209,59 +1229,84 @@ button {
   color: var(--blue);
 }
 
+.pbox__name,
+.pbox__jar,
+.pbox__price,
+.pbox__vol,
+.pbox__btn {
+  position: relative;
+  z-index: 1;
+}
+.pbox__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.pbox__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+  padding: 0 20px;
+  background: #fff;
+  color: #3193cc;
+  font-size: 18px;
+  font-weight: 600;
+  transition: opacity var(--tr);
+  border-radius: 30px;
+  white-space: nowrap;
+  right: 4px;
+  bottom: 36px;
+}
+.pbox__btn:hover {
+  opacity: 0.85;
+}
+.pbox__btn--icon {
+  width: 43px;
+  height: 43px;
+  padding: 0;
+  border-radius: 30px;
+  border-left: 1px solid rgba(47, 157, 207, 0.2);
+  margin-left: -1px;
+}
 .ibox {
   background: var(--bg-white);
   border-radius: var(--r-lg);
   padding: 36px 32px;
   text-align: center;
   box-shadow: var(--shadow);
-}
-.ibox__title {
-  font-size: 17px;
-  font-weight: 800;
-  color: var(--text);
-  margin-bottom: 24px;
-  line-height: 1.35;
-}
-.ibox__vis {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-.ibox__glass {
-  width: 50px;
-  height: 80px;
-  border: 3px solid #cce0ee;
-  border-top: none;
-  border-radius: 0 0 12px 12px;
-  background: rgba(200, 235, 255, 0.35);
   position: relative;
-}
-.ibox__glass-inner {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 55%;
-  background: rgba(147, 210, 247, 0.4);
-  border-radius: 0 0 9px 9px;
-}
-.ibox__spoon {
-  width: 36px;
-  height: 16px;
-  background: linear-gradient(180deg, #c8dcea, #a8c4d8);
-  border-radius: 8px 8px 0 0;
-  margin-bottom: 6px;
-}
-.ibox__steps p {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text);
-  line-height: 1.8;
+  height: 635px;
+  overflow: hidden;
 }
 
+.ibox__title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: -63px;
+  margin-top: 28px;
+}
+
+.ibox__img {
+  width: auto;
+  height: 520px;
+  transform: scale(1.24);
+  margin-left: 28px;
+  object-fit: contain;
+  pointer-events: none;
+}
+.ibox__steps {
+  margin-top: -86px;
+}
+
+.ibox__steps p {
+  font-size: 17.8px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.6;
+}
 /* ============================================================
      FAQ
      ============================================================ */
