@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FMF — Complex SW Суставы</title>
+    <title>FMF - Complex SW Суставы</title>
+    <meta
+      name="description"
+      content="Complex SW Суставы — порошок для опорно-двигательного аппарата"
+    />
+    <meta name="keywords" content="суставы, хондроитин, глюкозамин, БАД" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +21,7 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header__container">
+        <button class="burger" id="burger"><span></span><span></span></button>
         <img
           class="header__logo"
           src="img/logo/logo_FMF.svg"
@@ -23,6 +29,8 @@
           width="157"
           height="60"
         />
+        <img class="header__cart" src="img/logo/cart.svg" alt="cart" />
+
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -59,6 +67,19 @@
       </div>
     </header>
 
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__overlay" id="menuOverlay"></div>
+      <nav class="mobile-menu__nav">
+        <button class="mobile-menu__close" id="menuClose">✕</button>
+        <ul class="mobile-menu__list">
+          <li><a href="#about" class="mobile-menu__link">О продукте</a></li>
+          <li><a href="#compound" class="mobile-menu__link">Состав</a></li>
+          <li><a href="#for-whom" class="mobile-menu__link">Для кого</a></li>
+          <li><a href="#price" class="mobile-menu__link">Цена</a></li>
+          <li><a href="#faq" class="mobile-menu__link">Вопросы</a></li>
+        </ul>
+      </nav>
+    </div>
     <!-- HERO -->
     <section class="hero" id="about">
       <img class="hero__bg" src="img/joint.svg" alt="" />
@@ -155,7 +176,6 @@
     <!-- FEATURES -->
     <section class="features">
       <div class="features__container container">
-        <!-- Текст сверху слева -->
         <div class="features__intro-block">
           <p class="features__intro-bold">
             Представьте, что вы каждый день даёте своим суставам «витамин
@@ -193,8 +213,8 @@
             <h3 class="fcard__title">Питание суставов</h3>
             <p class="fcard__text">
               Полноценный рацион для ваших суставов. Ежедневно снабжаем хрящевую
-              ткань важными витаминами и микроэлементами, необходимыми для
-              поддержания <br />
+              ткань важными витаминами<br />
+              и микроэлементами, необходимыми для поддержания <br />
               её структуры и функций.
             </p>
           </div>
@@ -276,6 +296,10 @@
             </p>
           </div>
         </div>
+        <div class="features__nav">
+          <button class="features__btn features__btn--prev">‹</button>
+          <button class="features__btn features__btn--next">›</button>
+        </div>
       </div>
     </section>
 
@@ -305,8 +329,8 @@
           три главные задачи здоровья суставов
         </p>
         <div class="slogan__actions">
-          <a href="#order" class="slogan__btn">Оставить заявку</a>
-          <a href="#order" class="slogan__btn-icon">
+          <a href="#order" class="s-about__btn">Оставить заявку</a>
+          <a href="#order" class="s-about__btn-icon">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path
                 d="M4 14L14 4M14 4H6M14 4V12"
@@ -354,38 +378,39 @@
                 <h4>МСМ</h4>
                 <p>
                   Метилсульфонилметан укрепляет суставы, снимает воспаление и
-                  боль, улучшает кожу, волосы, ногти и нормализует иммунитет
+                  боль, улучшает кожу, волосы, ногти<br />
+                  и нормализует иммунитет
                 </p>
               </div>
               <div class="compound__item">
                 <h4>Коллаген</h4>
                 <p>
                   Является основным фибриллярным белком соединительной ткани,
-                  обеспечивающим прочность и эластичность сухожилий, костей и
-                  хрящей
+                  обеспечивающим прочность <br />и эластичность сухожилий,
+                  костей и хрящей
                 </p>
               </div>
               <div class="compound__item">
                 <h4>Босвелия</h4>
                 <p>
                   Подавляет воспаление в суставах, блокируя синтез лейкотриенов,
-                  что уменьшает боль и защищает хрящ от разрушения без вреда для
-                  ЖКТ
+                  что уменьшает боль и защищает хрящ <br />от разрушения без
+                  вреда для ЖКТ
                 </p>
               </div>
               <div class="compound__item">
                 <h4>Витамин C</h4>
                 <p>
-                  Участвует в синтезе коллагена, метаболизме гормонов и
-                  тирозина, окислительно-восстановительных процессах и улучшает
-                  усвоение железа в кишечнике
+                  Участвует в синтезе коллагена, метаболизме гормонов<br />
+                  и тирозина, окислительно-восстановительных процессах<br />
+                  и улучшает усвоение железа в кишечнике
                 </p>
               </div>
               <div class="compound__item">
                 <h4>Витамин E</h4>
                 <p>
-                  Защищает суставы, замедляя разрушение хряща и уменьшая боль и
-                  скованность
+                  Защищает суставы, замедляя разрушение хряща<br />
+                  и уменьшая боль и скованность
                 </p>
               </div>
               <div class="compound__item">
@@ -405,6 +430,20 @@
               <div class="compound__button">
                 <a href="#order" class="compound__btn">Купить в 1 клик</a>
                 <a href="#order" class="compound__btn-icon">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path
+                      d="M4 14L14 4M14 4H6M14 4V12"
+                      stroke="#ffffff"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="btn__mobile">
+                <a href="#order" class="s-about__btn">Заказать</a>
+                <a href="#order" class="s-about__btn-icon">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                     <path
                       d="M4 14L14 4M14 4H6M14 4V12"
@@ -518,7 +557,7 @@
             <p class="compare__badge-title">Курс на 1 месяц</p>
             <p class="compare__badge-sub">30 порций = 130₽ в день</p>
             <div class="compare__actions">
-              <a href="#order" class="slogan__btn">Купить в 1 клик</a>
+              <a href="#order" class="s-about__btn">Купить в 1 клик</a>
               <a href="#order" class="compound__btn-icon compare__icon">
                 <svg width="20" height="18" viewBox="0 0 18 18" fill="none">
                   <path
@@ -646,14 +685,17 @@
             <p class="contact__label contact__label--mt">Мессенджеры</p>
             <div class="contact__messengers">
               <a href="#" class="msng msng--tg"
-                ><img src="img/logo/logos_telegram.svg" alt="telegram-logo">
+                ><img src="img/logo/logos_telegram.svg" alt="telegram-logo" />
               </a>
               <a href="#" class="msng msng--ok"
-              
-              ><img src="img/logo/logos_max.svg" alt="max-logo"></a> 
+                ><img src="img/logo/logos_max.svg" alt="max-logo"
+              /></a>
               <a href="#" class="msng msng--wa"
-                ><img src="img/logo/logos_whatsup.svg" alt="whatsapp-logo"></a>
-              <a href="#" class="msng msng--vk"> <img src="img/logo/logos_vk.svg" alt="vk-logo"></a>
+                ><img src="img/logo/logos_whatsup.svg" alt="whatsapp-logo"
+              /></a>
+              <a href="#" class="msng msng--vk">
+                <img src="img/logo/logos_vk.svg" alt="vk-logo"
+              /></a>
             </div>
           </div>
           <div class="contact__form">
@@ -688,7 +730,7 @@
               <span>Я даю своё согласие на обработку персональных данных</span>
             </label>
             <div class="compare__actions">
-              <a href="#order" class="slogan__btn">Оставить заявку</a>
+              <a href="#order" class="s-about__btn">Оставить заявку</a>
               <a href="#order" class="compound__btn-icon compare__icon">
                 <svg width="20" height="18" viewBox="0 0 18 18" fill="none">
                   <path
@@ -714,7 +756,11 @@
           <p class="footer__rights">Все права защищены</p>
         </div>
         <div class="footer__center">
-          <img class="footer__logo" src="img/logo/black-FMF.svg" alt="FMF-logo">
+          <img
+            class="footer__logo"
+            src="img/logo/black-FMF.svg"
+            alt="FMF-logo"
+          />
           <p class="footer__disclaimer">
             БАД. Не является лекарственным средством. Требуется консультация
             специалиста
