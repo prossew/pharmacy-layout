@@ -918,8 +918,29 @@ button {
 }
 
 .age-slider {
-  position: relative;
-  top: 80px;
+  overflow: hidden;
+}
+
+.age-slider__track {
+  display: flex;
+  gap: 20px;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.age-slider__track::-webkit-scrollbar {
+  display: none;
+}
+
+.age-slider__item {
+  min-width: 300px;
+  flex-shrink: 0;
+
+  scroll-snap-align: start;
 }
 
 .age-slider__arrow {
@@ -1617,6 +1638,7 @@ left: 160px;
     grid-template-columns: 380px 1fr;
   }
 }
+
 /* ============================================================
    1024px — маленький десктоп / большой планшет
 ============================================================ */
@@ -1720,6 +1742,18 @@ height: 40px;
     margin-left: 100px;
   }
   .compare__img {
+    display: none; 
+  }
+
+  .age-slider__track {
+    gap: 30;
+  }
+  .age-card {
+   
+    width: 300px;
+  }
+  
+  .age-slider__arrow {
     display: none;
   }
 
@@ -1934,21 +1968,15 @@ height: 40px;
   }
   .for-whom__title {
     font-size: 28px;
+    width: 480px;
     margin-top: 50px;
   }
   .for-whom__logo {
     display: none;
   }
-  .age-slider__track {
-    flex-direction: column;
-    gap: 8px;
-  }
-  .age-card {
-    width: 100%;
-  }
-  .age-slider__arrow {
-    display: none;
-  }
+ .age-card {
+  width: 200px;
+ }
 
   /* COMPARE */
   .compare {
