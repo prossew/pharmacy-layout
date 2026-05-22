@@ -2,7 +2,7 @@
 
 Лендинг продукта «Complex SW СУСТАВЫ» для компании Оптисалт.
 
-🔗 Demo: https://your-site-link.com
+🔗 Demo: https://prossew.github.io/pharmacy-layout/
 
 ## Технологии
 
