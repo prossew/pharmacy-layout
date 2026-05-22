@@ -1,100 +1,9 @@
-<!doctype html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FMF - Complex SW Суставы</title>
-    <meta
-      name="description"
-      content="Complex SW СУСТАВЫ — порошок для опорно-двигательного аппарата. Глюкозамин, хондроитин, коллаген. 1 порция = 17 капсул. Заказать за 3900₽."
-    />
-    <meta
-      name="keywords"
-      content="суставы, хондроитин, глюкозамин, коллаген, БАД, опорно-двигательный аппарат, Complex SW, Оптисалт"
-    />
-    <meta name="robots" content="index, follow" />
+<?php include 'header.php'; ?>
 
-    <!-- Open Graph — для соцсетей -->
-    <meta property="og:title" content="Complex SW СУСТАВЫ — свобода движения" />
-    <meta
-      property="og:description"
-      content="Порошок для опорно-двигательного аппарата. 9 активных компонентов. 1 порция = 17 капсул."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="img/jar.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="header__container">
-        <button class="burger" id="burger"><span></span><span></span></button>
-        <img
-          class="header__logo"
-          src="img/logo/logo_FMF.svg"
-          alt="FMF logo"
-          width="157"
-          height="60"
-        />
-        <img class="header__cart" src="img/logo/cart.svg" alt="cart" />
+<main>
 
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#about" class="nav__link">О продукте</a>
-            </li>
-            <li class="nav__item">
-              <a href="#compound" class="nav__link">Состав</a>
-            </li>
-            <li class="nav__item">
-              <a href="#for-whom" class="nav__link">Для кого</a>
-            </li>
-            <li class="nav__item">
-              <a href="#price" class="nav__link">Цена</a>
-            </li>
-            <li class="nav__item">
-              <a href="#faq" class="nav__link">Вопросы</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__actions">
-          <a href="#order" class="header__btn">Оставить заявку</a>
-          <a href="#order" class="header__btn header__btn--icon">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <path
-                d="M4 14L14 4M14 4H6M14 4V12"
-                stroke="#2F9DCF"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <div class="mobile-menu" id="mobileMenu">
-      <div class="mobile-menu__overlay" id="menuOverlay"></div>
-      <nav class="mobile-menu__nav">
-        <button class="mobile-menu__close" id="menuClose">✕</button>
-        <ul class="mobile-menu__list">
-          <li><a href="#about" class="mobile-menu__link">О продукте</a></li>
-          <li><a href="#compound" class="mobile-menu__link">Состав</a></li>
-          <li><a href="#for-whom" class="mobile-menu__link">Для кого</a></li>
-          <li><a href="#price" class="mobile-menu__link">Цена</a></li>
-          <li><a href="#faq" class="mobile-menu__link">Вопросы</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- HERO -->
-    <section class="hero" id="about">
+<!-- HERO -->
+<section class="hero" id="about">
       <img class="hero__bg" src="img/joint.svg" alt="" />
       <div class="hero__bubbles">
         <div class="hero__bubble hero__bubble--1"></div>
@@ -143,9 +52,9 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="s-about">
-      <div class="s-about__container container">
+<!-- ABOUT -->
+<section class="s-about">
+<div class="s-about__container container">
         <h2 class="s-about__title">
           Комплекс для тех, кто хочет свободно двигаться<br />
           и заботиться о своих суставах каждый день
@@ -184,11 +93,11 @@
           </div>
         </div>
       </div>
-    </section>
+</section>
 
-    <!-- FEATURES -->
-    <section class="features">
-      <div class="features__container container">
+<!-- FEATURES -->
+<section class="features">
+<div class="features__container container">
         <div class="features__intro-block">
           <p class="features__intro-bold">
             Представьте, что вы каждый день даёте своим суставам «витамин
@@ -314,11 +223,11 @@
           <button class="features__btn features__btn--next">›</button>
         </div>
       </div>
-    </section>
+</section>
 
-    <!-- SLOGAN  -->
-    <section class="slogan">
-      <div class="slogan__container container">
+<!-- SLOGAN -->
+<section class="slogan">
+<div class="slogan__container container">
         <div class="slogan__jars">
           <img
             src="img/centre-jar.svg"
@@ -356,11 +265,11 @@
           </a>
         </div>
       </div>
-    </section>
+</section>
 
-    <!-- COMPOUND -->
-    <section class="compound" id="compound">
-      <div class="compound__container">
+<!-- COMPOUND -->
+<section class="compound" id="compound">
+<div class="compound__container">
         <div class="compound__card">
           <div class="compound__img-col">
             <div class="compound__scoop-wrap"></div>
@@ -472,11 +381,11 @@
           </div>
         </div>
       </div>
-    </section>
+</section>
 
-    <!-- FOR WHOM -->
-    <section class="for-whom" id="for-whom">
-      <div class="for-whom__bg"></div>
+<!-- FOR WHOM -->
+<section class="for-whom" id="for-whom">
+<div class="for-whom__bg"></div>
       <div class="for-whom__container container">
         <div class="for-whom__inner">
           <h2 class="for-whom__title">
@@ -519,11 +428,11 @@
           </div>
         </div>
       </div>
-    </section>
+</section>
 
-    <!-- COMPARE -->
-    <section class="compare">
-      <div class="compare__container">
+<!-- COMPARE -->
+<section class="compare">
+<div class="compare__container">
         <div class="compare__body">
           <div class="compare__left">
             <h2 class="compare__title">Сравнение с другими продуктами</h2>
@@ -586,11 +495,11 @@
           </div>
         </div>
       </div>
-    </section>
+</section>
 
-    <!-- PRICE + INSTR -->
-    <section class="price-instr" id="price">
-      <div class="price-instr__container container">
+<!-- PRICE -->
+<section class="price-instr" id="price">
+<div class="price-instr__container container">
         <div class="price-instr__grid">
           <div class="pbox">
             <img class="pbox__bg" src="img/joint.svg" alt="joint-background" />
@@ -628,11 +537,11 @@
           </div>
         </div>
       </div>
-    </section>
+</section>
 
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-      <div class="faq__container container">
+<!-- FAQ -->
+<section class="faq" id="faq">
+<div class="faq__container container">
         <div class="faq__list">
           <details class="faq__item">
             <summary class="faq__q">
@@ -683,11 +592,11 @@
           </details>
         </div>
       </div>
-    </section>
+</section>
 
-    <!-- CONTACT -->
-    <section class="contact" id="order">
-      <div class="contact__container">
+<!-- CONTACT -->
+<section class="contact" id="order">
+<div class="contact__container">
         <h2 class="contact__title">Остались вопросы? Напишите нам</h2>
         <div class="contact__body">
           <div class="contact__info">
@@ -759,33 +668,8 @@
           </div>
         </div>
       </div>
-    </section>
+</section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer__container container">
-        <div class="footer__left">
-          <p class="footer__copy">© 2026, Оптисалт</p>
-          <p class="footer__rights">Все права защищены</p>
-        </div>
-        <div class="footer__center">
-          <img
-            class="footer__logo"
-            src="img/logo/black-FMF.svg"
-            alt="FMF-logo"
-          />
-          <p class="footer__disclaimer">
-            БАД. Не является лекарственным средством. Требуется консультация
-            специалиста
-          </p>
-        </div>
-        <div class="footer__right">
-          <a href="#" class="footer__link">Оферта</a>
-          <a href="#" class="footer__link">Политика конфиденциальности</a>
-        </div>
-      </div>
-    </footer>
+</main>
 
-    <script src="main.js"></script>
-  </body>
-</html>
+<?php include 'footer.php'; ?>
