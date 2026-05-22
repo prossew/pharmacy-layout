@@ -1605,21 +1605,21 @@ button {
   .features__center {
     width: 400px;
   }
-.fcard__text {
-  font-size: 13px;
-  text-align: center;
-  width: 360px;
-}
-.fcard__title {
-text-align: center;
-margin-left: 50px;;
-}
-.frow--right .fcard__icon-wrap {
-left: 160px;
-}
-.fcard__icon-wrap {
-  left: 150px;
-}
+  .fcard__text {
+    font-size: 13px;
+    text-align: center;
+    width: 360px;
+  }
+  .fcard__title {
+    text-align: center;
+    margin-left: 50px;
+  }
+  .frow--right .fcard__icon-wrap {
+    left: 160px;
+  }
+  .fcard__icon-wrap {
+    left: 150px;
+  }
   /* COMPOUND */
   .compound__card {
     grid-template-columns: 500px 1fr;
@@ -1632,7 +1632,7 @@ left: 160px;
   .compare__right {
     margin-left: 160px;
   }
- 
+
   /* CONTACT */
   .contact__body {
     grid-template-columns: 380px 1fr;
@@ -1655,8 +1655,8 @@ left: 160px;
     padding: 0 14px;
   }
   .header__btn--icon {
-width: 43px;
-height: 40px;
+    width: 43px;
+    height: 40px;
   }
 
   /* HERO */
@@ -1742,17 +1742,16 @@ height: 40px;
     margin-left: 100px;
   }
   .compare__img {
-    display: none; 
+    display: none;
   }
 
   .age-slider__track {
     gap: 30;
   }
   .age-card {
-   
     width: 300px;
   }
-  
+
   .age-slider__arrow {
     display: none;
   }
@@ -1974,9 +1973,9 @@ height: 40px;
   .for-whom__logo {
     display: none;
   }
- .age-card {
-  width: 200px;
- }
+  .age-card {
+    width: 200px;
+  }
 
   /* COMPARE */
   .compare {
